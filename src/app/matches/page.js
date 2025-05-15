@@ -8,7 +8,7 @@ import path from 'path';
 
 export default async function LocalTextDisplay() {
   let matches = [];
-  // Read the text file - adjust the path as needed
+  // Read the text file - adjust the path as needed.
   const textFilePath = path.join(process.cwd(), 'src/app/ai-output.txt');
   const fileContents = await fs.readFile(textFilePath, 'utf8');
   
